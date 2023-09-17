@@ -1,0 +1,86 @@
+.logo {
+    width: 200px;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.menu_icon{
+    display: none;
+    cursor: pointer;
+}
+
+.navMenu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.visible {
+    flex-direction: column;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    width: 100%;
+    background-color: #495E57;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.navMenu li {
+    display: inline-block;
+    padding: 1em;
+}
+.navMenu li a {
+  text-decoration: none;
+  font-size: medium;
+  font-weight: bold;
+  color: black;
+}
+
+.navMenu li a:hover, .navMenu a:active, .navMenu li a.active {
+    color: #495e57;
+    cursor: pointer;
+    padding-bottom: .25rem;
+    border-bottom: 3px solid #495E57;
+}
+
+@media screen and (max-width: 768px){
+    .menu_icon {
+      display: block;
+      position: absolute;
+      right: 2%;
+    }
+
+    .navMenu{
+      display: none;
+    }
+
+    .visible {
+      display: flex;
+      gap: 5px;
+      background: #333333;
+      z-index: 1000;
+      padding: 20px 0;
+    }
+
+    .navbar{
+      background:#fff;
+      padding: 10px 8%;
+    }
+
+    .nav ul li a{
+      color: #fff;
+    }
+
+    .bar{
+      background: #333333;
+    }
+}
+
+
+
+

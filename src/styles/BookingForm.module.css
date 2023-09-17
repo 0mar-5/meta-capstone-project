@@ -1,0 +1,43 @@
+form {
+    max-width: 28.125rem;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 auto 1.875rem auto;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+label {
+    font-weight: bold;
+}
+input ,select{
+    height: 2.5rem;
+    padding-inline-end: 1rem;
+    padding-inline-start: 1rem;
+    outline: none;
+    border: 0.0625rem solid #E0E0E0;
+    border-radius: 0.375rem;
+    background: #FFFFFF;
+    color: #495E57;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    background-color: #F4CE14;
+    color: #495E57;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #495E57;
+    color: #F4CE14;
+}
